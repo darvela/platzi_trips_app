@@ -25,7 +25,19 @@ class MyApp extends StatelessWidget {
           title: Text("Hola Mundo Hermoso"),
         ),
         body: Center(
-          child: Text("Hola Mundo Generoso"),
+          child: Stack(
+            children: <Widget>[
+              const Image(
+                image: NetworkImage('https://flutter.github.io/assets-for-api-docs/assets/widgets/owl.jpg'),
+              ),
+              Container(
+                width: 80,
+                height: 80,
+                color: Color.fromRGBO(255, 255, 255, 0.5),
+              )
+
+            ],
+          )
         ),
       )//MyHomePage(title: 'Flutter Demo Home Page'),
     );
