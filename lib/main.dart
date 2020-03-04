@@ -28,14 +28,20 @@ class MyApp extends StatelessWidget {
           child: Stack(
             children: <Widget>[
               const Image(
-                image: NetworkImage('https://flutter.github.io/assets-for-api-docs/assets/widgets/owl.jpg'),
+                //image: NetworkImage('https://flutter.github.io/assets-for-api-docs/assets/widgets/owl.jpg'),
+                image: NetworkImage('https://raw.githubusercontent.com/darvela/assets/master/pesca.jpeg'),
               ),
               Container(
-                width: 80,
-                height: 80,
+                width: 410,
+                height: 250,
                 color: Color.fromRGBO(255, 255, 255, 0.5),
+              ),
+              Text(
+                'My own photo?',
+                textAlign: TextAlign.center,
+                overflow: TextOverflow.ellipsis,
+                style: TextStyle(fontWeight: FontWeight.bold),
               )
-
             ],
           )
         ),
