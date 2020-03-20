@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:platzi_trips_app/description_place.dart';
 
 void main() => runApp(MyApp());
 
@@ -22,30 +23,9 @@ class MyApp extends StatelessWidget {
         ),
         home: Scaffold(
           appBar: AppBar(
-            title: Text("Hola Mundo Hermoso"),
+            title: Text("Hola mundo hermoso"),
           ),
-          body: Center(
-              child: Stack(
-            alignment: Alignment.center,
-            children: <Widget>[
-              const Image(
-                //image: NetworkImage('https://flutter.github.io/assets-for-api-docs/assets/widgets/owl.jpg'),
-                image: NetworkImage(
-                    'https://raw.githubusercontent.com/darvela/assets/master/pesca.jpeg'),
-              ),
-              Container(
-                width: 400,
-                height: 100,
-                color: Color.fromRGBO(255, 255, 255, 0.5),
-              ),
-              Text(
-                'Segundo reto termiado',
-                textAlign: TextAlign.center,
-                overflow: TextOverflow.ellipsis,
-                style: TextStyle(fontWeight: FontWeight.bold),
-              )
-            ],
-          )),
+          body: new DescriptionPlace(),
         ) //MyHomePage(title: 'Flutter Demo Home Page'),
         );
   }
