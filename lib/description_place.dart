@@ -54,7 +54,7 @@ class DescriptionPlace extends StatelessWidget {
               textAlign: TextAlign.left),
         ),
         Row(
-          children: <Widget>[star, star, star, star_border, star_half],
+          children: <Widget>[star, star, star, star_half, star_border],
         )
       ],
     );
@@ -66,7 +66,7 @@ class DescriptionPlace extends StatelessWidget {
         Container(
             margin: EdgeInsets.only(top: 10, left: 20.0),
             child: new Text(descriptionPlace,
-                textAlign: TextAlign.center,
+                textAlign: TextAlign.left,
                 style: const TextStyle(
                     fontFamily: "Raleway",
                     fontSize: 16.0,

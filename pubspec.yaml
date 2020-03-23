@@ -70,7 +70,11 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
+  assets:
+    - assets/img/viajero.jpg
+    - assets/img/viajero2.jpg
+    - assets/img/viajero3.jpg
   fonts:
     - family: Raleway
       fonts:
-        - asset: fonts/Raleway-Regular.ttf
+        - asset: fonts/Raleway/Raleway-Regular.ttf
