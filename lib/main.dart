@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:platzi_trips_app/description_place.dart';
 import 'package:platzi_trips_app/review_list.dart';
+import 'package:platzi_trips_app/gradient_back.dart';
 
 void main() => runApp(MyApp());
 
@@ -25,11 +26,18 @@ class MyApp extends StatelessWidget {
           primarySwatch: Colors.blue,
         ),
         home: Scaffold(
-          appBar: AppBar(
-            title: Text("Hola mundo hermoso"),
-          ),
           //body: new DescriptionPlace("Santa Marta", 4, descriptionDummy),
-          body: ReviewList(),
+          body: Stack(
+            children: <Widget>[
+              ListView(
+                children: <Widget>[
+                  DescriptionPlace("Santa Marta", 4, descriptionDummy),
+                  ReviewList()
+                ],
+              ),
+              GradientBack()
+            ],
+          )
         ) //MyHomePage(title: 'Flutter Demo Home Page'),
         );
   }

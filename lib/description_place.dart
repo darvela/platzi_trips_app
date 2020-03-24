@@ -59,8 +59,8 @@ class DescriptionPlace extends StatelessWidget {
       ],
     );
 
-    final full_description = ListView(
-      padding: const EdgeInsets.all(8),
+    final full_description = Column(
+      //padding: const EdgeInsets.all(8),
       children: <Widget>[
         Container(child: title_stars),
         Container(
