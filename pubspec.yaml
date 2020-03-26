@@ -74,6 +74,10 @@ flutter:
     - assets/img/viajero.jpg
     - assets/img/viajero2.jpg
     - assets/img/viajero3.jpg
+    - assets/img/salento.jpg
+    - assets/img/santaMarta.jpg
+    - assets/img/sogamoso.JPG
+    - assets/img/villaDeLeyva.jpg
   fonts:
     - family: Raleway
       fonts:
