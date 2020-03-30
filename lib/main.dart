@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:platzi_trips_app/description_place.dart';
 import 'package:platzi_trips_app/gradient_back.dart';
 import 'package:platzi_trips_app/review_list.dart';
@@ -11,6 +12,11 @@ class MyApp extends StatelessWidget {
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ligula elit, molestie sit amet mollis non, malesuada fringilla est. Morbi dapibus arcu arcu, vel blandit mi consequat auctor. \n\nCras commodo facilisis varius. Cras hendrerit tincidunt purus, nec varius nisi consequat id. Maecenas et purus vitae lectus venenatis vulputate.";
   @override
   Widget build(BuildContext context) {
+
+    SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
+      statusBarColor: Colors.transparent, //or set color with: Color(0xFF0000FF)
+    ));
+
     return MaterialApp(
         title: 'Flutter Demo',
         theme: ThemeData(
