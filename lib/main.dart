@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:platzi_trips_app/description_place.dart';
-import 'package:platzi_trips_app/gradient_back.dart';
-import 'package:platzi_trips_app/review_list.dart';
-import 'package:platzi_trips_app/header_appbar.dart';
+import 'platzi_trips.dart';
+import 'platzi_trips_cupertino.dart';
 
 void main() => runApp(MyApp());
 
@@ -32,19 +30,8 @@ class MyApp extends StatelessWidget {
           // is not restarted.
           primarySwatch: Colors.blue,
         ),
-        home: Scaffold(
-            //body: new DescriptionPlace("Santa Marta", 4, descriptionDummy),
-            body: Stack(
-          children: <Widget>[
-            ListView(
-              children: <Widget>[
-                DescriptionPlace("Santa Marta", 4, descriptionDummy),
-                ReviewList()
-              ],
-            ),
-            HeaderAppbar()
-          ],
-        )) //MyHomePage(title: 'Flutter Demo Home Page'),
+         home: PlatziTripsCupertino(),
+         //MyHomePage(title: 'Flutter Demo Home Page'),
         );
   }
 }
