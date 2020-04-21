@@ -20,7 +20,7 @@ class _PlatziTrips extends State <PlatziTrips>{
   final List<Widget> widgetsChildren = [
     HomeTrips(),
     SearchTrips(),
-    ProfilesTrips()
+    ProfilesTrips("assets/img/profile_photo.jpg")
   ];
 
   void onTapTapped(int index){

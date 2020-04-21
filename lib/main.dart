@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'platzi_trips.dart';
-import 'platzi_trips_cupertino.dart';
+//import 'platzi_trips_cupertino.dart';
 
 void main() => runApp(MyApp());
 
@@ -30,7 +30,7 @@ class MyApp extends StatelessWidget {
           // is not restarted.
           primarySwatch: Colors.blue,
         ),
-         home: PlatziTripsCupertino(),
+         home: PlatziTrips(),
          //MyHomePage(title: 'Flutter Demo Home Page'),
         );
   }

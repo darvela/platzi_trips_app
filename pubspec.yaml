@@ -78,6 +78,11 @@ flutter:
     - assets/img/santaMarta.jpg
     - assets/img/sogamoso.JPG
     - assets/img/villaDeLeyva.jpg
+    - assets/img/paisaje1.jpg
+    - assets/img/paisaje2.jpg
+    - assets/img/paisaje3.jpg
+    - assets/img/profile_photo.jpg
+    - assets/img/park.jpg
   fonts:
     - family: Raleway
       fonts:

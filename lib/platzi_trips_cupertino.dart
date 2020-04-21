@@ -43,7 +43,7 @@ class PlatziTripsCupertino extends StatelessWidget {
               break;
             case 2:
               return CupertinoTabView(
-                builder: (BuildContext context) => ProfilesTrips()
+                builder: (BuildContext context) => ProfilesTrips("assets/img/paisaje1.jpg")
               );
               break;
 
